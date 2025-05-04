@@ -94,15 +94,15 @@ int main() {
 
   此方式稱為**初始化列表**，在主程式定義完 `struct`，就能使用啟用不同的方式賦予數值。
 
-  ```c++
-struct TreeNode {
+  ```c
+  struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
+  };
   ```
 
 * `struct` 使用 `new` 建立 :
